@@ -25,16 +25,16 @@ public class Subject {
         String ranS = ""+ran;
         for (int i=1; i <= line.length();i++){
             if (ranS.equals("1")){
-                return "q";
+                return "What is 3*3?";
             }
             if (ranS.equals("2")){
-                return "q1";
+                return "What is 2+5?";
             }
             if (ranS.equals("3")){
-                return "q2";
+                return "What are the first 3 digits of pi?";
             }
             if (ranS.equals("4")){
-                return "q3";
+                return "What is the slope formula?";
             }
             line = line.substring(0,ran)+(ran);
         }
@@ -78,9 +78,9 @@ public class Subject {
         }
         return "";
     }
-    public String answer(int ran, String answer){
-        if (ran == 1){
-            if (answer.equals("...")){
+    public String answer(int subject, int ran, String answer){
+        if ((ran == 1)&&(subject==1)){
+            if (answer.equals("9")){
                 return "Correct!";
             }
             else{
