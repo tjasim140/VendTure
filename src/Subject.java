@@ -27,7 +27,7 @@ public class Subject {
     public String getMath(int ran){
         String line = "1234";
         String ranS = ""+ran;
-        for (int i=1; i <= line.length();i++){
+//        for (int i=1; i <= line.length();i++){
             if (ranS.equals("1")){
                 return "What is 3*3?";
             }
@@ -40,8 +40,7 @@ public class Subject {
             if (ranS.equals("4")){
                 return "What is the slope formula?";
             }
-            line = line.substring(0,ran)+(ran);
-        }
+//        }
         return "";
     }
     public String getHistory(int ran){
@@ -82,39 +81,48 @@ public class Subject {
         }
         return "";
     }
-    public String answer(int subject, int ran, String answer){
+    public String answer(int subject,int ran, String answer){
+        String isCorrect ="";
         if ((ran == 1)&&(subject==1)){
             if (answer.equals("9")){
-                return "Correct!";
+                isCorrect = "Correct!";
+                return isCorrect;
             }
             else{
-                return "Incorrect";
+                isCorrect = "Incorrect";
+                return isCorrect;
             }
         }
-        if (ran == 2){
+        else if ((ran == 2)&&(subject==1)){
             if (answer.equals("...")){
-                return "Correct!";
+                isCorrect = "Correct!";
+                return isCorrect;
             }
             else{
-                return "Incorrect";
+                isCorrect = "Incorrect";
+                return isCorrect;
             }
         }
-        if (ran == 3){
+        else if ((ran == 3)&&(subject==1)){
             if (answer.equals("...")){
-                return "Correct!";
+               isCorrect = "Correct!";
+                return isCorrect;
             }
             else{
-                return "Incorrect";
+                isCorrect = "Incorrect";
+                return isCorrect;
             }
         }
-        if (ran == 4){
+        else if ((ran == 4)&&(subject==1)){
             if (answer.equals("...")){
-                return "Correct!";
+                isCorrect = "Correct!";
+                return isCorrect;
             }
             else{
-                return "Incorrect";
+                isCorrect = "Incorrect";
+                return isCorrect;
             }
         }
-        return "";
+        return isCorrect;
     }
 }
