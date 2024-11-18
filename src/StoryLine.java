@@ -1,46 +1,33 @@
-import java.util.Scanner;
 public class StoryLine {
+    Subject m = new Subject();
+
     // takes the subject the user chose and returns corresponding questions and answer checks by calling other methods
-    public String choice (String subject){
-        Scanner s = new Scanner(System.in);
-        Subject m = new Subject();
+    public String choice (String subject,int num){
         int b = m.getSubject(subject);
         if (b == 1){
-            String line = "1234";
-            for (int i = 0; i<=line.length()-1;i++) {
-                int y = (int) (Math.random()* line.length()+1);//fix random after number q gets removed
-                return y + mathLine(y);
-            }
+                int y = (int) (Math.random()*3+1);
+                return num + mathLine(num);
         }
         if (b == 2){
-            String line = "1234";
-            for (int i = 0; i<=line.length()-1;i++) {
-                int y = (int) (Math.random() * line.length() + 1);
-               return y + historyLine(y);
-            }
+                int y = (int) (Math.random() *3 + 1);
+               return num + historyLine(num);
         }
         if (b == 3){
-            String line = "1234";
-            for (int i = 0; i<=line.length()-1;i++) {
-                int y = (int) (Math.random() * line.length() + 1);
-                return y + otherLine(y);
-            }
+                int y = (int) (Math.random() *3+ 1);
+                return num + otherLine(num);
         }
         return "";
     }
     public String mathLine(int num){
         String script1 = "blah blah blah\n";
-        Subject n = new Subject();
-        return script1+n.getMath(num);
+        return script1 + m.getMath(num);
     }
     public String historyLine(int num){
-        String script1 = "blah blah blah";
-        Subject n = new Subject();
-        return script1+n.getHistory(num);
+        String script1 = "blah blah blah\n";
+        return script1+m.getHistory(num);
     }
     public String otherLine(int num){
-        String script1 = "blah blah blah";
-        Subject n = new Subject();
-        return script1+n.getOther(num);
+        String script1 = "blah blah blah\n";
+        return script1+m.getOther(num);
     }
 }

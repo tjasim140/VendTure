@@ -25,22 +25,19 @@ public class Subject {
     }
     //returns question
     public String getMath(int ran){
-        String line = "1234";
-        String ranS = ""+ran;
-//        for (int i=1; i <= line.length();i++){
-            if (ranS.equals("1")){
+            if (ran==1){
                 return "What is 3*3?";
             }
-            if (ranS.equals("2")){
+            if (ran==2){
                 return "What is 2+5?";
             }
-            if (ranS.equals("3")){
+            if (ran==3){
                 return "What are the first 3 digits of pi?";
             }
-            if (ranS.equals("4")){
+            if (ran==4){
                 return "What is the slope formula?";
             }
-//        }
+
         return "";
     }
     public String getHistory(int ran){
@@ -94,7 +91,7 @@ public class Subject {
             }
         }
         else if ((ran == 2)&&(subject==1)){
-            if (answer.equals("...")){
+            if (answer.equals("7")){
                 isCorrect = "Correct!";
                 return isCorrect;
             }
@@ -104,7 +101,7 @@ public class Subject {
             }
         }
         else if ((ran == 3)&&(subject==1)){
-            if (answer.equals("...")){
+            if (answer.equals("3.14")){
                isCorrect = "Correct!";
                 return isCorrect;
             }
@@ -114,7 +111,7 @@ public class Subject {
             }
         }
         else if ((ran == 4)&&(subject==1)){
-            if (answer.equals("...")){
+            if (answer.equals("y2-y1/x2-x1")){
                 isCorrect = "Correct!";
                 return isCorrect;
             }
