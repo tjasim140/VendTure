@@ -1,9 +1,6 @@
 public class Subject {
-//    String subject;
-//    // assigns number to subject
-//    public Subject (String subject){
-//        this.subject=subject;
-//    }
+
+    // assigns number to subject
     public int getSubject (String subject){
         if (subject.equals("math")){
             return 1;
@@ -19,10 +16,12 @@ public class Subject {
         }
         return 0;
     }
+
     //chooses random subject
     public int randomSubject (){
         return (int) (Math.random()*3+1);
     }
+
     //returns question
     public String getMath(int ran){
             if (ran==1){
@@ -41,83 +40,163 @@ public class Subject {
         return "";
     }
     public String getHistory(int ran){
-        String line = "1234";
-        String ranS = ""+ran;
-        for (int i=1; i <= line.length();i++){
-            if (ranS.equals("1")){
-                return "q";
+            if (ran == 1){
+                return "When was The Declaration of Sentiments written?";
             }
-            if (ranS.equals("2")){
-                return "q1";
+            if (ran==2){
+                return "Who was the person with the giant cheese wheel?";
             }
-            if (ranS.equals("3")){
-                return "q2";
+            if (ran==3){
+                return "When was the Civil War?";
             }
-            if (ranS.equals("4")){
-                return "q3";
+            if (ran==4){
+                return "What is..";
             }
-        }
         return "";
     }
     public String getOther(int ran){
-        String line = "1234";
-        String ranS = ""+ran;
-        for (int i=1; i <= line.length();i++){
-            if (ranS.equals("1")){
-                return "1.q";
+            if (ran==1){
+                return "1";
             }
-            if (ranS.equals("2")){
-                return "2.q1";
+            if (ran==2){
+                return "2";
             }
-            if (ranS.equals("3")){
-                return "3.q2";
+            if (ran==3){
+                return "3";
             }
-            if (ranS.equals("4")){
-                return "4.q3";
+            if (ran==4){
+                return "4";
             }
-        }
         return "";
     }
+
+    //Checks user input and returns weather the answer was correct or not ***simplify if statements so it checks for subject first then for the question #
     public String answer(int subject,int ran, String answer){
         String isCorrect ="";
+
+        //Checks math questions
         if ((ran == 1)&&(subject==1)){
             if (answer.equals("9")){
-                isCorrect = "Correct!";
-                return isCorrect;
+                isCorrect = "\nCorrect!";
+                return isCorrect + "\nblah blah blah";
             }
             else{
-                isCorrect = "Incorrect";
-                return isCorrect;
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
             }
         }
         else if ((ran == 2)&&(subject==1)){
             if (answer.equals("7")){
-                isCorrect = "Correct!";
-                return isCorrect;
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
             }
             else{
-                isCorrect = "Incorrect";
-                return isCorrect;
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
             }
         }
         else if ((ran == 3)&&(subject==1)){
             if (answer.equals("3.14")){
-               isCorrect = "Correct!";
-                return isCorrect;
+               isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
             }
             else{
-                isCorrect = "Incorrect";
-                return isCorrect;
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
             }
         }
         else if ((ran == 4)&&(subject==1)){
             if (answer.equals("y2-y1/x2-x1")){
-                isCorrect = "Correct!";
-                return isCorrect;
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
             }
             else{
-                isCorrect = "Incorrect";
-                return isCorrect;
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
+            }
+        }
+
+        //Checks History questions
+        if ((ran == 1)&&(subject==2)){
+            if (answer.equals("9")){
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
+            }
+            else{
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
+            }
+        }
+        else if ((ran == 2)&&(subject==2)){
+            if (answer.equals("7")){
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
+            }
+            else{
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
+            }
+        }
+        else if ((ran == 3)&&(subject==2)){
+            if (answer.equals("3.14")){
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
+            }
+            else{
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
+            }
+        }
+        else if ((ran == 4)&&(subject==2)){
+            if (answer.equals("y2-y1/x2-x1")){
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
+            }
+            else{
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
+            }
+        }
+
+        //Checks Other questions
+        if ((ran == 1)&&(subject==3)){
+            if (answer.equals("9")){
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
+            }
+            else{
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
+            }
+        }
+        else if ((ran == 2)&&(subject==3)){
+            if (answer.equals("7")){
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
+            }
+            else{
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
+            }
+        }
+        else if ((ran == 3)&&(subject==3)){
+            if (answer.equals("3.14")){
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
+            }
+            else{
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
+            }
+        }
+        else if ((ran == 4)&&(subject==3)){
+            if (answer.equals("y2-y1/x2-x1")){
+                isCorrect = "\nCorrect!";
+                return isCorrect+ "\nblah blah blah";
+            }
+            else{
+                isCorrect = "\nIncorrect";
+                return isCorrect+ "\nblah blah blah";
             }
         }
         return isCorrect;
