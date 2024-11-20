@@ -11,21 +11,21 @@ public class StoryLine {
             return historyLine(num);
         }
         if (subject == 3){
-            return otherLine(num);
+            return spanishLine(num);
         }
         return "";
     }
 
     public String mathLine(int num){
-        String script1 = "blah blah blah\n";
+        String script1 = "\nblah blah blah\n";
         return script1 + m.getMath(num);
     }
     public String historyLine(int num){
-        String script1 = "blah blah blah\n";
+        String script1 = "\nblah blah blah\n";
         return script1+ m.getHistory(num);
     }
-    public String otherLine(int num){
-        String script1 = "blah blah blah\n";
-        return script1 + m.getOther(num);
+    public String spanishLine(int num){
+        String script1 = "\nblah blah blah\n";
+        return script1 + m.getSpanish(num);
     }
 }
