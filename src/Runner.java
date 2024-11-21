@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 public class Runner {
     public static void main(String[] args) {
+        //new MyFrame();
         Scanner s = new Scanner(System.in);
         StoryLine n = new StoryLine();
         Subject m = new Subject();
@@ -13,7 +14,7 @@ public class Runner {
             String x = s.nextLine().toLowerCase();//button
             System.out.println("You chose: "+x);
             int y = m.getSubject(x);
-//            String line = "1234";
+////            String line = "1234";
 ////            for (int i = line.length()-1; i>0;i--){
 ////            int num = (int) (Math.random()*(line.length()-1) + 1);
 ////            num = Integer.parseInt(String.valueOf(line.charAt(num)));
