@@ -2,16 +2,16 @@ public class Subject {
 
     // assigns number to subject
     public int getSubject (String subject){
-        if (subject.equals("math")){
+        if (subject.contains("math")){
             return 1;
         }
-        if (subject.equals("history")){
+        if (subject.contains("history")){
             return 2;
         }
-        if (subject.equals("spanish")){
+        if (subject.contains("spanish")){
             return 3;
         }
-        if (subject.equals("random")){
+        if (subject.contains("random")){
             return randomSubject();
         }
         return 0;
@@ -79,7 +79,7 @@ public class Subject {
             if (q ==1){
                 if (answer.equals("9")){
                     isCorrect = "\nCorrect!";
-                    return isCorrect + "\nblah blah blah";
+                    return isCorrect + "\nAfter figuring out how many of the strange cards there are,...";
                 }
                 else{
                     isCorrect = "\nIncorrect\nThe correct answer was: 9";
@@ -109,11 +109,11 @@ public class Subject {
             if (q==4){
                 if (answer.equals("y2-y1/x2-x1")){
                     isCorrect = "\nCorrect!";
-                    return isCorrect+ "\nblah blah blah";
+                    return isCorrect + "\nblah blah blah";
                 }
                 else{
                     isCorrect = "\nIncorrect\nThe correct answer was: y2-y1/x2-x1";
-                    return isCorrect+ "\nblah blah blah";
+                    return isCorrect + "\nblah blah blah";
                 }
             }
         }
@@ -130,35 +130,32 @@ public class Subject {
                     return isCorrect+ "\nblah blah blah";
                 }
             }
-            if (q ==2){
-                if (answer.equals("Andrew Jackson")){
+            else if (q ==2){
+                if (answer.equals("andrew jackson")){
                     isCorrect = "\nCorrect!";
-                    return isCorrect+ "\nblah blah blah";
                 }
                 else{
                     isCorrect = "\nIncorrect\nThe correct answer was: Andrew Jackson";
-                    return isCorrect+ "\nblah blah blah";
                 }
+                return isCorrect+ "\nblah blah blah";
             }
-            if (q==3){
+            else if (q==3){
                 if (answer.equals("1861")){
                     isCorrect = "\nCorrect!";
-                    return isCorrect+ "\nblah blah blah";
                 }
                 else{
                     isCorrect = "\nIncorrect\nThe correct answer was: 1861";
-                    return isCorrect+ "\nblah blah blah";
                 }
+                return isCorrect+ "\nblah blah blah";
             }
-            if (q ==4){
-                if (answer.equals("Jamestown")){
+            else if (q ==4){
+                if (answer.equals("jamestown")){
                     isCorrect = "\nCorrect!";
-                    return isCorrect+ "\nblah blah blah";
                 }
                 else{
                     isCorrect = "\nIncorrect\nThe correct answer was: Jamestown";
-                    return isCorrect+ "\nblah blah blah";
                 }
+                return isCorrect+ "\nblah blah blah";
             }
         }
 
@@ -174,7 +171,7 @@ public class Subject {
                     return isCorrect+ "\nblah blah blah";
                 }
             }
-            if (q ==2){
+            else if (q ==2){
                 if (answer.equals("cold")){
                     isCorrect = "\nCorrect!";
                     return isCorrect+ "\nblah blah blah";
@@ -184,7 +181,7 @@ public class Subject {
                     return isCorrect+ "\nblah blah blah";
                 }
             }
-            if (q ==3){
+            else if (q ==3){
                 if (answer.equals("tree")){
                     isCorrect = "\nCorrect!";
                     return isCorrect+ "\nblah blah blah";
@@ -194,7 +191,7 @@ public class Subject {
                     return isCorrect+ "\nblah blah blah";
                 }
             }
-            if (q == 4){
+            else if (q == 4){
                 if (answer.equals("fish")){
                     isCorrect = "\nCorrect!";
                     return isCorrect+ "\nblah blah blah";

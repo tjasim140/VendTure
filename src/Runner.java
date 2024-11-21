@@ -14,6 +14,15 @@ public class Runner {
             String x = s.nextLine().toLowerCase();//button
             System.out.println("You chose: "+x);
             int y = m.getSubject(x);
+
+            // If user does not enter valid subject, asks user to try again until valid subject is entered
+            while (y==0){
+                System.out.println("\n Sorry, that is not an option, try again!");
+                System.out.println("\n\nTo start, type Math, History, or Spanish. If you don't know what to choose, type random: ");
+                x = s.nextLine().toLowerCase();//button
+                System.out.println("You chose: "+x);
+                y = m.getSubject(x);
+            }
 ////            String line = "1234";
 ////            for (int i = line.length()-1; i>0;i--){
 ////            int num = (int) (Math.random()*(line.length()-1) + 1);

@@ -17,7 +17,7 @@ public class StoryLine {
     }
 
     public String mathLine(int num){
-        String script1 = "\nblah blah blah\n";
+        String script1 = "\n...You walk into your room with your new bag of chips and find a stack of cards on the table\nSome are arranged in an interesting way\nThey form a 3 by 3 card display";
         return script1 + m.getMath(num);
     }
     public String historyLine(int num){
