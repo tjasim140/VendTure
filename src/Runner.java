@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 public class Runner {
     public static void main(String[] args) {
-        //new MyFrame();
+        new MyFrame();
         Scanner s = new Scanner(System.in);
         StoryLine n = new StoryLine();
         Subject m = new Subject();
