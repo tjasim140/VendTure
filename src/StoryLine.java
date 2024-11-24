@@ -1,6 +1,11 @@
 
 public class StoryLine {
-    Subject m = new Subject();
+    private String x;
+    private Subject m = new Subject(x);
+    public StoryLine(String x){
+        Subject m;
+        this.x=x;
+    }
 
     // takes the subject the user chose and returns corresponding questions and answer checks by calling other methods
     public String choice (int subject,int num){
@@ -17,15 +22,16 @@ public class StoryLine {
     }
 
     public String mathLine(int num){
-        String script1 = "\n...You walk into your room with your new bag of chips and find a stack of cards on the table\nSome are arranged in an interesting way\nThey form a 3 by 3 card display";
+        String script1 = "\nYou walk into your room with your new bag of chips and find a stack of cards on the table...\n";
         return script1 + m.getMath(num);
     }
     public String historyLine(int num){
-        String script1 = "\nblah blah blah\n";
+        String script1 = "\nYou grab your chocolate bar and rush to get on the school bus...\n";
         return script1+ m.getHistory(num);
     }
     public String spanishLine(int num){
-        String script1 = "\nblah blah blah\n";
+        String script1 = "\nYou get some donuts to bring to your friend's house\n";
         return script1 + m.getSpanish(num);
     }
+
 }
