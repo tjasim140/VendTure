@@ -5,11 +5,10 @@ import java.util.Locale;
 import java.util.Scanner;
 public class Runner {
     public static void main(String[] args) {
-        //new MyFrame();
         Scanner s = new Scanner(System.in);
         String continueS = "";
         while (!continueS.equals("no")) {
-            System.out.println("Welcome!\nTo start, type Math, History, or Spanish. If you don't know what to choose, type random!: ");
+            System.out.println("Welcome to VendTure!\nA fun way to practice what you know\nTo start, type Math, History, or Spanish. If you don't know what to choose, type random!: ");
             String x = s.nextLine().toLowerCase();//button
             System.out.println("You chose: " + x);
             Subject m = new Subject(x);
