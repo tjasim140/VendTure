@@ -1,6 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-import java.awt.event.ActionEvent;
 import java.util.Locale;
 import java.util.Scanner;
 public class Runner {
@@ -28,7 +25,7 @@ public class Runner {
 
             String isCorrect = "";
             for (int i = 1; i <= 4; i++) {
-                String choice = n.choice(y, i);
+                String choice = n.choice(y,i);
                 System.out.println(choice);
                 System.out.println("\nAnswer: ");
                 String ans = s.nextLine().toLowerCase();
