@@ -1,7 +1,7 @@
 
 public class StoryLine {
     private String subject;
-    private Subject subInt = new Subject(subject);
+    private final Subject subInt = new Subject(subject);
     public StoryLine(String subject){
         Subject subInt;
         this.subject=subject;

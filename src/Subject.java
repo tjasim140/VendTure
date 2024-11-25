@@ -1,5 +1,5 @@
 public class Subject {
-    private String subject;
+    private final String subject;
     public Subject (String subject){
         this.subject=subject;
     }
