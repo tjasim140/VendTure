@@ -9,7 +9,7 @@ public class Runner {
         String continueS = "";
         while (!continueS.equals("no")) {
             System.out.println("Welcome to VendTure!\nA fun way to practice what you know\nTo start, type Math, History, or Spanish. If you don't know what to choose, type random!: ");
-            String x = s.nextLine().toLowerCase();//button
+            String x = s.nextLine().toLowerCase();
             System.out.println("You chose: " + x);
             Subject m = new Subject(x);
             StoryLine n = new StoryLine(x);
@@ -18,8 +18,10 @@ public class Runner {
             while (y == 0) {
                 System.out.println("\n Sorry, that is not an option, try again!");
                 System.out.println("\n\nTo start, type Math, History, or Spanish. If you don't know what to choose, type random: ");
-                x = s.nextLine().toLowerCase();//button
+                x = s.nextLine().toLowerCase();
                 System.out.println("You chose: " + x);
+                m = new Subject(x);
+                n = new StoryLine(x);
                 y = m.getSubject();
             }
             int score = 0;

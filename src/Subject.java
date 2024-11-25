@@ -28,7 +28,7 @@ public class Subject {
     //returns question
     public String getMath(int ran){
             if (ran==1){
-                return "\nSome are arranged in an interesting way\nThey form a 3 by 3 card display\nWhat is 3*3?";
+                return "\nYou walk into your room with your new bag of chips and find a stack of cards on the table...\nSome are arranged in an interesting way\nThey form a 3 by 3 card display\nWhat is 3*3?";
             }
             if (ran==2){
                 return "What is 2+5?";
@@ -44,7 +44,7 @@ public class Subject {
     }
     public String getHistory(int ran){
             if (ran == 1){
-                return "\nYou are on a school trip to the museum to learn about U.S history\nWhen the class gets there, the tour guide ushers you to see a document\nWhen was The Declaration of Sentiments written?";
+                return "\nYou grab your chocolate bar and rush to get on the school bus...\nYou are on a school trip to the museum to learn about U.S history\nWhen the class gets there, the tour guide ushers you to see a document\nWhen was The Declaration of Sentiments written?";
             }
             if (ran==2){
                 return "Who was the person with the giant cheese wheel?";
@@ -59,7 +59,7 @@ public class Subject {
     }
     public String getSpanish(int ran){
             if (ran==1){
-                return "\nYou're going to your friend's house to experience Dia de los Muertos for the first time\nAs you are walking there however, you accidentally drop the donuts\nTranslate: Enojado";
+                return "\nYou get some donuts to bring to your friend's house\nYou're going to your friend's house to experience Dia de los Muertos for the first time\nAs you are walking there however, you accidentally drop the donuts\nTranslate: Enojado";
             }
             if (ran==2){
                 return "Translate: Frio";
@@ -140,7 +140,7 @@ public class Subject {
                 }
                 else {
                     isCorrect = "\nIncorrect\nThe correct answer was: Andrew Jackson";
-                    return isCorrect + "\nUnfortunately, one of the staff thought that your name was Andrew Jackson and thought that they should gift you a 1400 pound wheel of cheese\nOr maybe you like cheese\nEither way you have to wheel this around for the rest of the trip\nEventually you bump into a painting you couldn't sww behind the wheel of cheese";
+                    return isCorrect + "\nUnfortunately, one of the staff thought that your name was Andrew Jackson and thought that they should gift you a 1400 pound wheel of cheese\nOr maybe you like cheese\nEither way you have to wheel this around for the rest of the trip\nEventually you bump into a painting you couldn't see behind the wheel of cheese";
                 }
             }
             else if (q==3){
@@ -150,7 +150,7 @@ public class Subject {
                 }
                 else{
                     isCorrect = "\nIncorrect\nThe correct answer was: 1861";
-                    return isCorrect+"You didn't recognize the painting thinking that it was from a movie or something\nAs you turn away from the painting you see something shiny out of the corner of your eye\nAll of sudden something tackles you from behind...a soldier?\nFrom the painting?\nNot knowing what to do you stop drop and roll\nThankfully, another soldier comes out of the painting and drags the one on top of you back into the painting\nMaybe he just wasn't having a good day";
+                    return isCorrect+"\nYou didn't recognize the painting thinking that it was from a movie or something\nAs you turn away from the painting you see something shiny out of the corner of your eye\nAll of sudden something tackles you from behind...a soldier?\nFrom the painting?\nNot knowing what to do you stop drop and roll\nThankfully, another soldier comes out of the painting and drags the one on top of you back into the painting\nMaybe he just wasn't having a good day";
                 }
             }
             else if (q ==4){
