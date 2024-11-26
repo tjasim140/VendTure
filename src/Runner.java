@@ -52,7 +52,7 @@ public class Runner {
             System.out.println("\nYou got " + score + "/4 correct!");
             System.out.println("\nWould you like to try again?: ");
             continueS = s.nextLine();
-            continueS = continueS.toLowerCase(Locale.ROOT);
+            continueS = continueS.toLowerCase(Locale.ROOT);//allows user to continue or end program
         }
     }
 }
