@@ -1,9 +1,24 @@
+/**
+ *The Subject class represents a subject. A subject is a named topic, that can have questions and answers on it.
+ */
 public class Subject {
     private final String subject;
+
+    /**
+     * The constructor of the class Subject. This creates a new instance of the Subject class given the below parameter
+     *
+     * @param subject represents the subject the user wants to study as a string value
+     */
     public Subject (String subject){
         this.subject=subject;
     }
-    // assigns number to subject
+
+    /**
+     * The getSubject method of the Subject class.
+     * This assigns an integer greater than 0 to each subject, returning an integer based on user string input
+     *
+     * @return returns an integer greater than 0 corresponding to a given subject
+     */
     public int getSubject (){
         if (subject.contains("math")){
             return 1;
@@ -20,12 +35,21 @@ public class Subject {
         return 0;
     }
 
-    //chooses random subject
+    /**
+     * The randomSubject method of the Subject class that returns a random integer value that corresponds to a subject
+     *
+     * @return returns random int value from 1-4 which corresponds to a specific subject
+     */
     public int randomSubject (){
         return (int) (Math.random()*3+1);
     }
 
-    //returns question
+    /**
+     * The getMath method of the Subject class. This returns a specific question based on the Math topic as a string based on integer value ran, which is incremented with the use of a for loop in the Runner class
+     *
+     * @param ran represents an integer value that corresponds to the number question the user is up to
+     * @return returns a specific question as a string based on the number question the user is up to
+     */
     public String getMath(int ran){
             if (ran==1){
                 return "\nYou walk into your room with your new bag of chips and find a stack of cards on the table...\nSome are arranged in an interesting way\nThey form a 3 by 3 card display\nWhat is 3*3?";
@@ -42,6 +66,13 @@ public class Subject {
 
         return "";
     }
+
+    /**
+     *The getHistory method of the Subject class. This returns a specific question based on the History topic as a string based on integer value ran, which is incremented with the use of a for loop in the Runner class
+     *
+     * @param ran represents an integer value that corresponds to the number question the user is up to
+     * @return returns a specific question as a string based on the number question the user is up to
+     */
     public String getHistory(int ran){
             if (ran == 1){
                 return "\nYou grab your chocolate bar and rush to get on the school bus...\nYou are on a school trip to the museum to learn about U.S history\nWhen the class gets there, the tour guide ushers you to see a document\nWhen was The Declaration of Sentiments written?";
@@ -57,6 +88,13 @@ public class Subject {
             }
         return "";
     }
+
+    /**
+     *The getSpanish method of the Subject class. This returns a specific question based on the Spanish topic as a string based on integer value ran, which is incremented with the use of a for loop in the Runner class
+     *
+     * @param ran represents an integer value that corresponds to the number question the user is up to
+     * @return returns a specific question as a string based on the number question the user is up to
+     */
     public String getSpanish(int ran){
             if (ran==1){
                 return "\nYou get some donuts to bring to your friend's house\nYou're going to your friend's house to experience Dia de los Muertos for the first time\nAs you are walking there however, you accidentally drop the donuts\nTranslate: Enojado";
@@ -73,12 +111,21 @@ public class Subject {
         return "";
     }
 
-    //Checks user input and returns weather the answer was correct or not
+    /**
+     * The answer method of the Subject class that is used to check the users answers to the questions.
+     * This method will return a string that will let teh user know if they were correct, and if they were incorrect what the correct answer was, and will return a string with a positive or negative story line based on whether the answer was correct
+     *
+     * @param subject represents the subject the user is answering questions about as an integer value
+     * @param q represents the question that the user answered as an integer
+     * @param answer represents the user's answer to the question as a string user input
+     * @return returns a String in a properly formatted sentence where the user is told if they got the question correct, if not what the correct answer was, and a story line that leads to the next question
+     */
     public String answer(int subject,int q, String answer){
         String isCorrect ="";
 
         //Checks math questions
         if (subject==1){
+            //Checks question 1
             if (q ==1){
                 if (answer.equals("9")){
                     isCorrect = "\nCorrect!";
@@ -89,6 +136,7 @@ public class Subject {
                     return isCorrect+ "\nSuddenly, two of the cards from the center shrivelled up, and the remaining cards changed colors";
                 }
             }
+            //Checks question 2
             if (q==2){
                 if (answer.equals("7")){
                     isCorrect = "\nCorrect!";
@@ -99,6 +147,7 @@ public class Subject {
                     return isCorrect+ "\nThe 2 gold cards shrivelled up and disappeared\nLeaving 5 silver cards\nYou pick up one of the cards and see a circle drawn on it";
                 }
             }
+            //Checks question 3
             if (q==3){
                 if (answer.equals("3.14")){
                     isCorrect = "\nCorrect!";
@@ -109,6 +158,7 @@ public class Subject {
                     return isCorrect+ "\nThe circle looks a little peculiar.\nWith a closer look you see that it has a code in the center of it\nMaybe it's for that one mysterious locked box in your room\nthat you never thought to open before this bag of chips that you for some reason have";
                 }
            }
+            //Checks question 4
             if (q==4){
                 if (answer.equals("y2-y1/x2-x1")){
                     isCorrect = "\nCorrect!";
@@ -123,6 +173,7 @@ public class Subject {
 
         //Checks History questions
         if (subject==2){
+            //Checks question 1
             if (q ==1){
                 if (answer.equals("1848")){
                     isCorrect = "\nCorrect!";
@@ -133,6 +184,7 @@ public class Subject {
                     return isCorrect+ "\nThe tour guide could tell that no one really cared to learn about the document (she definitely shed a few tears after) so she decided to move on\nShe decided to move on to the Declaration of Independence instead and the Hall of Presidents";
                 }
             }
+            //Checks question 2
             else if (q ==2){
                 if (answer.equals("andrew jackson")){
                     isCorrect = "\nCorrect!";
@@ -143,6 +195,7 @@ public class Subject {
                     return isCorrect + "\nUnfortunately, one of the staff thought that your name was Andrew Jackson and thought that they should gift you a 1400 pound wheel of cheese\nOr maybe you like cheese\nEither way you have to wheel this around for the rest of the trip\nEventually you bump into a painting you couldn't see behind the wheel of cheese";
                 }
             }
+            //Checks question 3
             else if (q==3){
                 if (answer.equals("1861")){
                     isCorrect = "\nCorrect!";
@@ -153,6 +206,7 @@ public class Subject {
                     return isCorrect+"\nYou didn't recognize the painting thinking that it was from a movie or something\nAs you turn away from the painting you see something shiny out of the corner of your eye\nAll of sudden something tackles you from behind...a soldier?\nFrom the painting?\nNot knowing what to do you stop drop and roll\nThankfully, another soldier comes out of the painting and drags the one on top of you back into the painting\nMaybe he just wasn't having a good day";
                 }
             }
+            //Checks question 4
             else if (q ==4){
                 if (answer.equals("jamestown")){
                     isCorrect = "\nCorrect!";
@@ -168,6 +222,7 @@ public class Subject {
 
         //Checks Spanish questions
         if (subject==3){
+            //Checks question 1
             if (q==1){
                 if (answer.equals("angry")||answer.equals("mad")){
                     isCorrect = "\nCorrect!";
@@ -178,6 +233,7 @@ public class Subject {
                     return isCorrect+ "\nYou get furious and get mad at yourself for being so clumsy\nHearing the ruckus, a baker from the nearby bakery comes over to see what is wrong\nAfter seeing the donuts he instantly understands and is disappointed by the waste as well\nTo help, he hands you a box of fresh muffins which you get to take to you friend's house instead!\nAs you continue on the journey you realize you have to pass by the river";
                 }
             }
+            //Checks question 2
             else if (q ==2){
                 if (answer.equals("cold")){
                     isCorrect = "\nCorrect!";
@@ -188,6 +244,7 @@ public class Subject {
                     return isCorrect+ "\nFreezing in the cold, you decide to thug it out and speed walk the rest of the way there\nHopefully you don't slip or crash into something, you can risk dropping the dessert again";
                 }
             }
+            //Checks question 3
             else if (q ==3){
                 if (answer.equals("tree")){
                     isCorrect = "\nCorrect!";
@@ -198,6 +255,7 @@ public class Subject {
                     return isCorrect+ "\nAs you rush to get there in time, you did not notice the tree right in front of you and crash right into it\nThankfully the baked goods survived and yoy are only a little scraped up and embarrassed!\nThe thought reminds you of a childhood friend";
                 }
             }
+            //Checks question 4
             else if (q == 4){
                 if (answer.equals("fish")){
                     isCorrect = "\nCorrect!";

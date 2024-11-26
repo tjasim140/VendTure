@@ -7,7 +7,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Locale;
 import javax.swing.JLabel;
-
+//This as going to be implementation of GUI but did not have time to fully implement it
+//Creates JFrame, JLabel, and 2 JButtons
 public class MyFrame extends JFrame implements ActionListener {
     JButton button;
     JButton button2;

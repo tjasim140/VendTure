@@ -1,16 +1,42 @@
+/**
+ * The Ending class represents and ending to a story.
+ * An Ending is determined by the users score, the subject the user chose, if the user got final question correct, and has an end story line.
+ */
 public class Ending {
-    private int score;
+    private final int score;
     private String end;
-    private int subject;
+    private final int subject;
     private String isCorrect;
+
+    /**
+     * The constructor for the Ending class. This creates a new instance of an Ending based on the below parameters
+     *
+     * @param score represents how many questions the user got correct
+     * @param subject represents the subject the user chose to answer questions about
+     * @param isCorrect represents whether the user answered the final question out of four correctly
+     */
     public Ending (int score, int subject, String isCorrect){
         this.score=score;
         this.subject=subject;
         this.isCorrect=isCorrect;
     }
+
+    /**
+     * The isMajority method of the Ending class.
+     * This method will return a boolean value of true if the user answered more than two question correctly and false otherwise.
+     *
+     * @param score represents how many questions the user answered correctly
+     * @return returns a boolean value of true or false: true if the user answered more than two questions correctly and return false otherwise
+     */
     public boolean isMajority(int score){
         return score > 2;
     }
+
+    /**
+     * The ending method will return a String value consisting of a storyline based on the number of questions they answered correctly and if they got the final question correct
+     * @param isCorrect represents if the user answer     * ed the final question correctly, if the string is empty then the user did not answer the last question correctly
+     * @return returns a String containing a story line based on the users performance
+     */
     public String ending(String isCorrect){
         if (isMajority(score)){
             if (subject==1&&isCorrect.equals("true")){
