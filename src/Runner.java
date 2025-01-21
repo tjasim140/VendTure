@@ -4,6 +4,7 @@ public class Runner {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         String continueS = "";
+        new MyFrame();
         PrintVend machine = new PrintVend();
         System.out.println(machine.printMachine());
         while (!continueS.equals("no")) {
